@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Python Pro - Aperitivos{% endblock title %}
+{% block description %}Página com todos vídeos gratuitos{% endblock description%}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">Lista de Vídeos Aperitivos</h1>
+            <ol>
+                {% for video in videos%}
+                <li>
+                    {{ video.titulo | default:"Faltando Título"}}
+                </li>
+                {% endfor %}
+            </ol>
+<!--            <h1 class="mt-4 mb-3">{{ video.titulo }}</h1>-->
+<!--            <iframe-->
+<!--                    width="853"-->
+<!--                    height="480"-->
+<!--                    src="https://www.youtube.com/embed/{{ video.youtube_id }}"-->
+<!--                    title="Como instalar o Docker no Windows"-->
+<!--                    frameborder="0"-->
+<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                    allowfullscreen>-->
+<!--            </iframe>-->
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
