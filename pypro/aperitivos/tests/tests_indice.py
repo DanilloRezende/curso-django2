@@ -21,13 +21,13 @@ def test_status_code(resp):
 def test_titulo_video(resp, titulo):
     assert_contains(resp, titulo)
 
-def teste_conteudo_video(resp):
-    assert_contains(resp, """<iframe
-                    width="853"
-                    height="480"
-                    src="https://www.youtube.com/embed/Lgh8JgcYFwM"
-                    title="Como instalar o Docker no Windows"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>""")
+@pytest.mark.parametrize(
+    'slug',
+    [
+        'motivacao',
+        'projetos-django'
+    ]
+)
+def test_link_video(resp, slug):
+    video_link = reverse('aperitivos:video', args=(slug,))
+    assert_contains(resp, f'href="{video_link}"')
