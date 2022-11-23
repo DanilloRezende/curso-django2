@@ -2,6 +2,8 @@ DEBUG=False
 SECRET_KEY=Defina sua Chave secreta
 ALLOWED_HOSTS=localhost, 127.0.0.1
 
+DATABASE_URL=postgres://postgres:postgres@localhost:5434/postgres
+
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 AWS_STORAGE_BUCKET_NAME
