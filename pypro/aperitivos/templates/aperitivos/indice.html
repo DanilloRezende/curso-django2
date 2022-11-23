@@ -12,6 +12,10 @@
                 <li>
                     {{ video.titulo | default:"Faltando Título"}}
                 </li>
+                {% empty %}
+                <li>
+                    Não foi encontrado nenhum vídeo de aperitivo
+                </li>
                 {% endfor %}
             </ol>
 <!--            <h1 class="mt-4 mb-3">{{ video.titulo }}</h1>-->
