@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,12 +13,12 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4652fc11-374f-4160-92a5-e2df58a647be">
-      <console name="postgres@localhost" type="STANDARD" schema="public" session="Session 1" />
+      <console name="postgres@localhost" type="STANDARD" schema="public" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/aperitivos_video" />
+      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/django_migrations" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -32,6 +32,7 @@
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_migrations" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
