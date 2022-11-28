@@ -18,7 +18,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/django_migrations" />
+      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/aperitivos_video" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
