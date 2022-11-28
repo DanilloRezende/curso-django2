@@ -17,7 +17,9 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/modulos_modulo" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="4652fc11-374f-4160-92a5-e2df58a647be">
@@ -30,6 +32,7 @@
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.modulos_modulo" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_migrations" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
