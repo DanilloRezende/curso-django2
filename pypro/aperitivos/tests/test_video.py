@@ -25,13 +25,14 @@ def test_status_code(resp):
 def test_titulo_video(resp, video):
     assert_contains(resp, video.titulo)
 
-def teste_conteudo_video(resp):
-    assert_contains(resp, """<iframe
-                    width="853"
-                    height="480"
-                    src="https://www.youtube.com/embed/Lgh8JgcYFwM"
-                    title="Como instalar o Docker no Windows"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>""")
+#Este teste diverge da aula pois foi feito como base um video no Youtube.
+# def teste_conteudo_video(resp):
+#     assert_contains(resp, """<iframe
+#                     width="853"
+#                     height="480"
+#                     src="https://www.youtube.com/embed/Lgh8JgcYFwM"
+#                     title="Como instalar o Docker no Windows"
+#                     frameborder="0"
+#                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+#                     allowfullscreen>
+#             </iframe>""")
