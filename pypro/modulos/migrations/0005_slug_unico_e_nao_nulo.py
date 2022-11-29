@@ -10,16 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='modulo',
-            name='descricao',
-            field=models.TextField(null=True),
-        ),
-        migrations.AddField(
-            model_name='modulo',
-            name='publico',
-            field=models.TextField(null=True),
-        ),
         migrations.AlterField(
             model_name='modulo',
             name='slug',
