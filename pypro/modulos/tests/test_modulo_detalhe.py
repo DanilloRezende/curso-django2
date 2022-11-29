@@ -13,7 +13,7 @@ def modulo(db):
 
 @pytest.fixture
 def modulo(db):
-    return mommy.make(Modulo)
+    return mommy.make(Aula, 3, modulo=modulo)
 
 @pytest.fixture
 def resp(client, modulo):
@@ -30,5 +30,6 @@ def test_descricao(resp, modulo: Modulo):
 def test_publico(resp, modulo: Modulo):
     assert_contains(resp, modulo.publico)
 
-def test_aulas_tituls(resp, modulo:Modulo):
-    assert_contains(resp, modulo.publico)
+def test_aulas_titulos(resp, aulas):
+    for aula in aulas:
+        assert_contains(resp, aula.titulo)
