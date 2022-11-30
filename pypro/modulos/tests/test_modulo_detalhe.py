@@ -4,7 +4,7 @@ from django.urls import reverse
 from model_mommy import mommy
 
 from pypro.django_assertions import assert_contains
-from pypro.modulos.models import Modulo
+from pypro.modulos.models import Modulo, Aula
 
 
 @pytest.fixture
@@ -12,7 +12,7 @@ def modulo(db):
     return mommy.make(Modulo)
 
 @pytest.fixture
-def modulo(db):
+def aulas(modulo):
     return mommy.make(Aula, 3, modulo=modulo)
 
 @pytest.fixture
@@ -33,3 +33,7 @@ def test_publico(resp, modulo: Modulo):
 def test_aulas_titulos(resp, aulas):
     for aula in aulas:
         assert_contains(resp, aula.titulo)
+
+def test_aulas_links(resp, aulas):
+    for aula in aulas:
+        assert_contains(resp, aula.get_absolut_url())
