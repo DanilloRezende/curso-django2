@@ -16,7 +16,7 @@ def aulas(modulo):
     return mommy.make(Aula, 3, modulo=modulo)
 
 @pytest.fixture
-def resp(client, modulo):
+def resp(client, modulo, aulas):
     resp = client.get(reverse('modulos:detalhe', kwargs={'slug': modulo.slug}))
     return resp
 
