@@ -18,7 +18,9 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/modulos_aula" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="4652fc11-374f-4160-92a5-e2df58a647be">
@@ -33,6 +35,10 @@
     </filter-actions>
     <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.modulos_modulo" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.modulos_aula" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.base_user_user_permissions" active-filter-id="" />
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_content_type" active-filter-id="" />
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_admin_log" active-filter-id="" />
+    <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_session" active-filter-id="" />
     <filter-actions connection-id="4652fc11-374f-4160-92a5-e2df58a647be" dataset="public.django_migrations" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
