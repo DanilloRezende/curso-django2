@@ -41,7 +41,7 @@ def test_publico(resp, modulos: List[Modulo]):
     for modulo in modulos:
         assert_contains(resp, modulo.publico)
 
-# Testes n funcionam devido a divergencia das versões utilizadas do pyCharm.(_set)
+# Testes não funcionam devido a divergencia das versões utilizadas do pyCharm.(_set)
 # def test_aulas_titulos(resp, aulas: List[Aula]):
 #     for aula in aulas:
 #         assert_contains(resp, aula.titulo)
