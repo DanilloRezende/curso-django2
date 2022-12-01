@@ -18,9 +18,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="4652fc11-374f-4160-92a5-e2df58a647be" object-ref="schemas/public/tables/turmas_matricula" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="4652fc11-374f-4160-92a5-e2df58a647be">
